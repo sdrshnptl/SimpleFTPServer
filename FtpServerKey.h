@@ -18,7 +18,7 @@
 #define FTP_SERVER_CONFIG_H
 
 // Uncomment to enable printing out nice debug messages.
-// #define FTP_SERVER_DEBUG
+#define FTP_SERVER_DEBUG
 
 // Define where debug output will be printed.
 #define DEBUG_PRINTER Serial
@@ -56,8 +56,8 @@
 #endif
 // esp32 configuration
 #ifndef DEFAULT_FTP_SERVER_NETWORK_TYPE_ESP32
-	#define DEFAULT_FTP_SERVER_NETWORK_TYPE_ESP32 		NETWORK_ESP32
-	#define DEFAULT_STORAGE_TYPE_ESP32 					STORAGE_FFAT
+	#define DEFAULT_FTP_SERVER_NETWORK_TYPE_ESP32 		NETWORK_W5100//NETWORK_ESP32
+	#define DEFAULT_STORAGE_TYPE_ESP32 					STORAGE_SPIFFS//STORAGE_FFAT
 #endif
 // Standard AVR Arduino configuration
 #ifndef DEFAULT_FTP_SERVER_NETWORK_TYPE_ARDUINO
